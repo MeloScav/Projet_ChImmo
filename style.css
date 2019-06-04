@@ -36,13 +36,13 @@ p{
   justify-content: flex-end;
 
   width: 100%;
-  border: 3px solid black;
+/*  border: 3px solid black;*/
 }
 
 #blocTotal{
   width: 74%;
   /*width: 1328px;*/
-  border: 3px solid black;
+/*  border: 3px solid black;*/
   padding-right: 45px;
 }
 
@@ -102,5 +102,7 @@ p{
 }
 
 #fleche{
-  width: 20px;
+  width: 15px;
+  margin: auto;
+
 }
