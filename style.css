@@ -78,8 +78,7 @@ p{
   grid-column-end: 2;
 }
 
-
-
+/*       Bloc total du texte avec les colonnes          */
 #blocColonne{
     grid-area: 3/1/5/6;   /* Position dans la grille  */
 }
@@ -116,7 +115,7 @@ p{
   margin-top: 0px;
   padding-top:0px;
 }
-
+/*            Couleur des titres          */
 .titreFonce{
     color: #13324B;
 }
@@ -161,4 +160,85 @@ p{
     margin: 0px;
     text-decoration: none;
     color: #75AAD5;
+}
+
+/*              Adaptation GSM                   */
+@media screen and (max-width: 720px){
+    #blocTotal{
+        width: 100%;
+        height: 50%;
+        margin: 0 auto;
+
+  /*  display: grid;
+      grid-template-columns: 1fr 1fr 1.1fr 0.9fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;*/
+
+      /*grid-template-areas: "titres titres titres titres" "titres titres titres titres"
+                          "Image Image Image Image" "Image Image Image Image" "Image Image Image Image" "Image Image Image Image"
+                          "texte texte texte texte" "texte texte texte texte" "texte texte texte texte" "texte texte texte texte" "texte texte texte texte"
+                          "plus plus plus plus"; */
+
+
+
+      /*  display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1.4fr 1.5fr 1.1fr 1.3fr 1fr 1fr 0.7fr 0.5fr;
+        grid-template-areas: "titre titre titre titre"
+                            "Image Image Image Image"
+                            "Image Image Image Image"
+                            "Image Image Image Image"
+                            "texte texte texte texte"
+                            "texte texte texte texte"
+                            "texte texte texte texte"
+                            "plus plus plus plus";   */
+
+
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1.5fr 1fr 0.5fr;
+          grid-template-areas: "titre titre titre titre"
+                                "Image Image Image Image"
+                                "texte texte texte texte"
+                                "plus plus plus plus";
+
+      }
+
+      .titres {
+          /*grid-area: titres;*/
+
+          grid-area: titre;
+
+          padding-left: 10%;
+        }
+
+      .imageFamille {
+          grid-area: Image;
+          z-index: 1;
+          position: relative;
+
+          width: 100%;
+          height: auto;
+
+      }
+
+
+
+      .blocColonne {
+          grid-area: texte;
+          position: relative;
+        }
+
+      .texteColonne{
+          align-self: end;
+          z-index: 1;
+          position: relative;
+
+          display:block;
+
+          width: 85%;
+
+      }
+
+      #enSavoirPlus { grid-area: plus; }
+
 }
