@@ -210,10 +210,10 @@ header {
 /* Listes en grid */
 
 .boxListContainer {
-    width: 80%;
+    width: 60%;
     display: grid;
-    grid-template-columns : 1fr 1fr ;
-    grid-column-gap: 4em;
+    grid-template-columns : 1fr 1fr;
+    grid-column-gap: 2em;
     margin: auto;
     justify-content: center;
     align-items: center;
