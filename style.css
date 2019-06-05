@@ -211,7 +211,8 @@ article{
                                 "plus plus plus plus";*/
 
           grid-template-columns: 1fr;
-          grid-template-rows: 0.5fr 1fr 0.6fr 0.4fr;
+          grid-template-rows: 0.5fr 1fr 0.6fr 0.5fr;
+          /*grid-template-rows: 0.5fr 1fr 0.6fr 0.4fr;*/
           grid-template-areas: "titre"
                                 "Image"
                                 "texte"
@@ -242,13 +243,13 @@ article{
           grid-area: texte;
           position: relative;
           width: 100%;
+                    display:flex;
         }
 
       .texteColonne{
           align-self: end;
           position: relative;
 
-          display:block;
           margin: auto;
           padding-left: 50px;
           padding-right: 50px;
@@ -260,6 +261,11 @@ article{
         line-height: 25px;
       }
 
-      #enSavoirPlus { grid-area: plus; }
+      #enSavoirPlus {
+        grid-area: plus;
+        z-index: 1;
+
+
+     }
 
 }
