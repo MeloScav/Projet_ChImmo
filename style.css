@@ -14,7 +14,7 @@ header {
 
 /* HEADER navigation menu */
 
-nav {
+.navMenuHeader {
     display: flex;
     margin: auto;
     width: 100%;
@@ -209,10 +209,10 @@ nav {
 
 /* Listes en grid */
 
-.box {
-    width: 60%;
+.boxListContainer {
+    width: 80%;
     display: grid;
-    grid-template-columns : 1fr 1fr 0fr;
+    grid-template-columns : 1fr 1fr ;
     grid-column-gap: 4em;
     margin: auto;
     justify-content: center;
@@ -432,18 +432,15 @@ nav {
     font-family: Droide;
     src : local(DroidSerif);
     font-weight: bold;
-    
-article{
-  background-color: #FFFFFF;
 }
 
-h1{
+.titres h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 40px;
   font-weight: bold;
 }
 
-h3{
+.titres h3{
   font-family: Droide;
   font-size: 20px;
 }
