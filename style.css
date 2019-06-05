@@ -50,9 +50,6 @@ p{
     display: grid;
     grid-template-columns: 1fr 1fr 1.1fr 0.9fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1.4fr 1fr 1fr 1.1fr 0.5fr;
-
-  /*  align-items: center;*/
-
 }
 
 
@@ -61,9 +58,10 @@ p{
   align-self: end;
   background-color:  #FFFFFF;
 
-  z-index: 2;
-  position: relative;
+  z-index: 2;   /* Surperposition */
+  position: relative; /* Dois avoir une position pour la superposition */
 
+  /* Grille du texte */
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 20px;
@@ -91,7 +89,7 @@ p{
     width: 45vw;
     height: auto;
     float: right;
-    z-index: 1;
+    z-index: 1;   /* Pour la superposition */
     position: absolute;
 
     grid-area: 1/5/5/11;    /* Position dans la grille  */
@@ -129,7 +127,7 @@ p{
 
 
 /*            Div de l'icône flèche            */
-.box-icon-arrow{
+.bloc-icon-arrow{
     display: flex;
     width: 3em;
     height: 3em;
@@ -142,7 +140,7 @@ p{
 
 }
 /*            Flèche            */
-.icon{
+.iconFleche{
   display: block;
   width: 1.5em;
   height: 1.5em;
@@ -150,16 +148,17 @@ p{
 
 /*            Div flèche + lien             */
 #enSavoirPlus {
+    /* ALignement flèche + lien  */
     display: flex;
     flex-direction: row;
 
-    grid-area: 5/1/6/11;
+    grid-area: 5/1/6/11;    /*  Position dans la grille */
 }
 /*          Lien EN SAVOIR PLUS           */
 #enSavoirPlus a{
     padding-top: 25px;
     padding-left: 0px;
     margin: 0px;
-   text-decoration: none;
-   color: #75AAD5;
+    text-decoration: none;
+    color: #75AAD5;
 }
