@@ -1,10 +1,10 @@
 <html>
   <head>
-      <title>Le responsive design</title>
+      <title>Projet Chimmo</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="style.css" type="text/css"/>
-      <! no referencement -->
+      <!-- no referencement -->
       <meta name="robots" content="noindex">
       <meta name="googlebot" content="noindex">
   </head>
@@ -15,29 +15,31 @@
 
             <div id="blocTotal">
 
-              <img id="imageFamille" src="assets/images/1200x800_01.jpg" alt="Image d'une famille sur un divan"/>
+              <img class="imageFamille" src="assets/images/1200x800_01.jpg" alt="Image d'une famille sur un divan"/>
 
-                <div id="titres">
+                <div class="titres">
                     <h3>La résidence IMMO -</h3>
-                    <h1>Un investissement sûr,<br>
-                        une qualité de vie<br> exceptionnelle.</h1>
+                    <h1><span class="titreFonce">Un investissement sûr,</span><br>
+                        <span class="titreClair">une qualité de vie<br> exceptionnelle.</span></h1>
                 </div>
 
-                <div id="texteColonne">
-                    <p>Située à Liège, la résidence Immo vous propose une architecture contemporaine bien intégrée au site.
-                        Les appartements proposés offrent le calme et la tranquillité de la campagne tout en préservant une proximité avec tous les grands axes.<br>
-                        Ce bâtiment éco-conçu avec des finitions de premier ordre sont ses atouts principaux. Ce projet de standing est consitué de 5
+                <div id="blocColonne">
+                  <div class="texteColonne">
+                      <p class="premierPara">Située à Liège, la résidence Immo vous propose une architecture contemporaine bien intégrée au site.
+                          Les appartements proposés offrent le calme et la tranquillité de la campagne tout en préservant une proximité avec tous les grands axes.</p>
+                      <p class="deuxiemePara">Ce bâtiment éco-conçu avec des finitions de premier ordre sont ses atouts principaux. Ce projet de standing est consitué de 5
                         appartements et d'un rez-de-chaussée à destination de bureaux. </p>
-                </div>
+                  </div>
+              </div>
 
 
                 <div id="enSavoirPlus">
 
-                <div id="blocFLeche">
-                  <img id="fleche" src="assets/svg/arrow-right2.svg" alt="flèche"/>
-                </div>
+                    <div class="bloc-icon-arrow">
+                      <img class="iconFleche" src="assets/svg/arrow-right2.svg" alt="flèche"/>
+                   </div>
 
-                    <a href="#">En savoir plus</a>
+                    <a href="#">EN SAVOIR PLUS</a>
 
                 </div>
             </div>
@@ -49,8 +51,8 @@
               <div>
                   <img class="plan-3D" src="images/1600x1000_01.jpg" alt="Plan 3D d'un appartement"/>
               </div>
-           
-          
+
+
 
               <div class="box">
 
@@ -79,7 +81,7 @@
                           <hr>
                           <li>Un chauffage individuel et une ventilation hyper économes</li>
                           <hr>
-                      
+
                         </ul>
 
                   </div>
@@ -87,7 +89,7 @@
                   <div class="box-list">
 
                       <h2>Les prestations</h2>
-                    
+
                       <div class="box-icon">
                       <img class="icon" src="images/icon-list.svg" alt="icone liste"/>
                     </div>
@@ -113,7 +115,7 @@
 
                   </div>
 
-                
+
 
               </div>
 
@@ -124,12 +126,12 @@
 
 
 
-    <! Footer : contact + nav footer -->
+    <!-- Footer : contact + nav footer -->
     <footer>
 
-      <! Contact -->
+      <!-- Contact -->
       <div class="contact">
-              
+
                   <h2 class="plusInfo">Vous souhaitez <span class="txtBlue">plus d'informations ? </span></h2>
                   <div class="btn-contact">
                       <div class="box-icon-arrow"><img class="icon" src="images/arrow-right2.svg" alt="icone flêche"/></div>
@@ -138,7 +140,7 @@
       </div>
 
 
-      <! menu navigation footer -->
+      <!-- menu navigation footer -->
       <nav>
 
         <div class="fondFooter">
@@ -155,13 +157,13 @@
             </ul>
 
 
-        <! liens SFD -->
+        <!-- liens SFD -->
           <div class="boxSFD">
               <ul class="liste-menu-footer">
                 <li><a href="#">Respect vie privée</li></a>
                 <li><a href="#">Contact - </li>
                 <li><a href="#"> <span class="websiteby">website by </span><img class="iconSFD" src="images/logo-sfd.svg" alt="logo SFD"/></a></li>
-              </ul>            
+              </ul>
           </div>
         </div>
       </div>
