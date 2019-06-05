@@ -13,18 +13,18 @@ article{
   background-color: #FFFFFF;
 }
 
-h1{
+.titres h1{
   font-family: 'Montserrat', sans-serif;
   font-size: 40px;
   font-weight: bold;
 }
 
-h3{
+.titres h3{
   font-family: Droide;
   font-size: 20px;
 }
 
-p{
+.texteColonne p{
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   font-weight: light;
