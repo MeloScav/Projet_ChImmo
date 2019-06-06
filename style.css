@@ -237,7 +237,7 @@ header {
     width: 24em;
     border-radius: 0.2em;
     padding: 5em;
-    box-shadow: 0px 0px 12px 7px rgba(148,148,129,0.5);
+    box-shadow: 0px 0px 12px 7px rgba(157, 179, 194, 0.5);
 }
 
 .liste hr {
@@ -458,7 +458,6 @@ p{
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-
   width: 100%;
 }
 
@@ -590,7 +589,10 @@ p{
 
 body {
     margin : 0;
-    
+}
+
+header {
+    height: 47%;
 }
 
 
@@ -635,7 +637,8 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: 2em;
+    align-items: flex-end;
+    margin-top: 8em;
     margin-left: 3em;
     line-height: 0em;
 }
@@ -658,11 +661,116 @@ body {
 
 .boxRound {
     display: flex;
-    flex-direction: column;
-    width: 18.5em;
-    justify-content: space-between;
+    flex-direction: column-reverse;
+    width: auto;
     margin-left: 5em;
+    margin-top: 4em;
+    margin-bottom: 2em;
+    justify-content: space-between;
+   
+    font-style: italic;
+    font-weight: bold;
+    z-index: 3;
 }
+
+
+
+.roundWhite {
+    width: 7.5em;
+    height: 7.5em;
+    background-color: #74AAD5;
+    margin-bottom: 1em;
+    font-size: 1em;
+    
+}
+
+.roundWhite p {
+    color:  white;
+}
+
+.roundBlue {
+    font-size: 1em;
+    width: 7.5em;
+    height: 7.5em;
+    background-color: white;
+    box-shadow: 0px 0px 12px 7px rgba(157, 179, 194, 0.5);
+ 
+}
+
+.roundBlue p {
+    color:  rgb(19, 50, 75);
+}
+
+
+/* TEXT IMG FAMILY */
+
+#blocTotal{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-right: 0%;
+    margin-left: 4em;
+    background-image: url("images/1200x800_01.jpg");
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    z-index:-1;
+}
+
+.imageFamille{
+    display: none;
+}
+
+#blocColonne{
+    display: flex;
+    flex-direction: row;
+   
+    justify-content: space-between;
+    grid-area: none;
+    left: 0;
+    
+}
+
+.titres{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin-top: 30%;
+    padding-left: 10px;
+    padding-top: 3em;
+    background-color: white;
+    font-style: italic;
+}
+
+.titres h1 {
+    font-family: "Droide", serif;
+    font-size: 45px;
+}
+
+.texteColonne{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    padding-right: 4em;
+    word-wrap: wrap;
+    background-color:  #FFFFFF;
+    z-index: 2;   /* Surperposition */
+
+  
+  
+  }
+
+  .PremierPara{
+    grid-column-start: 1;
+    grid-row-end: 1;
+  }
+
+  .deuxiemePara{
+    grid-column-start: 2;
+    grid-column-end: 2;
+  }
+
+
 
 
 
