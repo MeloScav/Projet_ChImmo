@@ -212,8 +212,8 @@ header {
 .boxListContainer {
     width: 60%;
     display: grid;
-    grid-template-columns : 1fr 1fr;
-    grid-column-gap: 2em;
+    grid-template-columns : 1fr 1fr 0fr;
+    grid-column-gap: 4em;
     margin: auto;
     justify-content: center;
     align-items: center;
@@ -583,3 +583,123 @@ p{
     text-decoration: none;
     color: #75AAD5;
 }
+
+
+
+@media  (min-width: 768px) and (max-width: 1024px) {
+
+body {
+    margin : 0;
+    
+}
+
+
+/* MENU HEADER*/
+
+
+.navContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+    margin-top: 0;
+    align-items: flex-start;
+    padding-top: 1em;
+    padding-left: 4em;
+}
+
+.LiNav {
+    display: none;
+}
+
+.logoCh {           /* Logo CH Immo */
+    height: 2.5em;
+}
+
+.btnPhone {                                   /* Btn phone contact navigation menu */
+    background-color: #74AAD5;
+    border: none;
+    width: 13em;
+    height: 4em;
+    color: white;
+    border-radius: 45px;
+    z-index: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.boxTxtImmo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2em;
+    margin-left: 3em;
+    line-height: 0em;
+}
+
+.txtImmo h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 70px;
+    font-weight: bolder;
+}
+
+.box-icon-header {
+    display: none;
+}
+
+
+
+.btnApt {
+    background-color: rgb(19, 50, 75);
+}
+
+.boxRound {
+    display: flex;
+    flex-direction: column;
+    width: 18.5em;
+    justify-content: space-between;
+    margin-left: 5em;
+}
+
+
+
+/* PLAN 3D LISTES  */
+
+/* Image du plan */
+.plan-3D {
+    display: flex;
+    flex-direction: row;
+    width : 100%;
+}
+
+.boxListContainer {
+    width: 80%;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2em;
+    justify-content: center;
+}
+
+.liste {
+    font-size: 1em;
+    width: 16em;
+    padding: 3em;
+}
+
+.box-list {
+    justify-content: space-around;
+}
+
+.box-icon {
+    left: 40%;
+}
+
+
+
+
+}
+
+
+  
