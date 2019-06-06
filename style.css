@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    padding: 0;
 }
 
 header {
@@ -128,6 +129,13 @@ header {
 .roundBlue p {
     color:  white;
 }
+
+
+/*          Menu 2                */
+.blocMenu{
+    display: none;
+}
+/*         Fin Menu 2        */
 
 
 /*  Text IMMO + button appartements */
@@ -586,9 +594,102 @@ p{
 
 /*              Adaptation GSM                   */
 @media screen and (max-width: 720px){
+    .navContainer{
+        display: none;    /* On fait disparaître le premier menu */
+    }
+
+
+    /*              Menu 2                */
+    header .blocMenu{
+      display: block;
+    	width: 100%;
+      color: white;
+      margin-top: 10px;
+      padding-right: 20px;
+    }
+
+    header .blocMenu ul {
+      /* On enlève l'effet bloc */
+      margin: 0px;
+    	padding: 0px;
+
+    	list-style: none;  /* on enlève les caractères "cercles". */
+    }
+
+    header .blocMenu ul::after { /* Insère le contenu après l'élément. */
+    	content:"";
+    	display: block;
+    	clear: both;
+    }
+
+    header .blocMenu ul li {
+    	float:right;   /* Position: droite */
+    	width: 60px;
+    	height: 35px;
+    	line-height: 35px;
+    	text-align: center;
+      font-weight: bold;
+    }
+
+    header .blocMenu ul li a {
+    	display: block;  /* Pour que le lien se comporte comme un bloc */
+    	text-decoration: none;
+    	z-index: 1000;   /* Apparaît au dessus */
+    }
+
+    .sous_onglets{
+    	display: none;   /* Invisible */
+    	position: relative;
+    }
+
+    header .blocMenu ul li ul li a:visited{
+    	color: white;
+    }
+    header .blocMenu ul li ul li a:link{
+    	color: white;
+    }
+
+    header .blocMenu ul li:hover ul li{
+    	display: block;
+    	z-index: 1000;
+      width: 70px;
+
+    }
+
+    header .blocMenu ul li a:hover {
+    	background-color: #BDBDBD;    /* Couleur sous-onglets */
+    	opacity: 0.5;
+    	font-weight: bold;
+    }
+
+    .imgMenu{
+        width: 25px;
+        padding-top: 10px;
+    }
+    .tel{
+        width: 40px;
+        height: 40px;
+        background-color: #74AAD5;
+        border-radius: 50%;
+    }
+    .imgTel{
+        width: 15px;
+        padding-top: 10px;
+    }
+
+
+    /* Logo CHIMMO  */
+    .BlocChimmo{
+        padding-top: 10px;
+        padding-left: 30px;
+    }
+    .logoCH{
+        width: 50%;
+    }
+
+
     #section1{
       display: flex;
-      justify-content:center;
       align-items:center;
 
       width: 100%;
@@ -599,50 +700,18 @@ p{
 
         margin: 0 auto;
 
-  /*  display: grid;
-      grid-template-columns: 1fr 1fr 1.1fr 0.9fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;*/
+        display: grid;
 
-      /*grid-template-areas: "titres titres titres titres" "titres titres titres titres"
-                          "Image Image Image Image" "Image Image Image Image" "Image Image Image Image" "Image Image Image Image"
-                          "texte texte texte texte" "texte texte texte texte" "texte texte texte texte" "texte texte texte texte" "texte texte texte texte"
-                          "plus plus plus plus"; */
-
-
-
-      /*  display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1.4fr 1.5fr 1.1fr 1.3fr 1fr 1fr 0.7fr 0.5fr;
-        grid-template-areas: "titre titre titre titre"
-                            "Image Image Image Image"
-                            "Image Image Image Image"
-                            "Image Image Image Image"
-                            "texte texte texte texte"
-                            "texte texte texte texte"
-                            "texte texte texte texte"
-                            "plus plus plus plus";   */
-
-
-          display: grid;
-        /*  grid-template-columns: 1fr 1fr 1fr 1fr;
-          grid-template-rows: 1fr 1.5fr 1fr 0.4fr;*/
-          /*grid-template-areas: "titre titre titre titre"
-                                "Image Image Image Image"
-                                "texte texte texte texte"
-                                "plus plus plus plus";*/
-
-          grid-template-columns: 1fr;
-          grid-template-rows: 0.5fr 1fr 0.6fr 0.5fr;
-          grid-template-areas: "titre"
-                                "Image"
-                                "texte"
-                                "plus";
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 1fr 0.6fr 0.5fr;
+        grid-template-areas: "titre"
+                              "Image"
+                              "texte"
+                              "plus";
 
       }
 
       .titres {
-          /*grid-area: titres;*/
-
           grid-area: titre;
           width:100%;
 
@@ -704,12 +773,30 @@ p{
           grid-template-rows: 1fr 1fr;
           grid-template-areas: "f"
                               "p";
+          width: 100%;
      }
+
+     .box-list{
+          width: 100%;
+     }
+
+     .liste {
+          width: 100%;
+     }
+
+
+
+
+
+
+
+
 
      /*           ligne           */
      .bigHR {
          display:none;
      }
+
 
 
 }
