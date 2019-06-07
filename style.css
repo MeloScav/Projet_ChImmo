@@ -12,7 +12,6 @@ header {
 }
 
 
-
 /* HEADER navigation menu */
 
 .navMenuHeader {
@@ -494,7 +493,7 @@ p{
   background-color:  #FFFFFF;
 
   z-index: 2;   /* Surperposition */
-  position: relative; /* Dois avoir une position pour la superposition */
+  position: relative; /* Doit avoir une position pour la superposition */
 
   /* Grille du texte */
   display: grid;
@@ -829,6 +828,33 @@ p{
 
      .liste {
           width: 100%;
+          padding: 5em;
+     }
+
+     .liste hr {
+        margin: auto;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-right: 20%;
+     }
+
+     .icon {
+         display: block;
+         width: 2em;
+         height: 2em;
+     }
+
+     .box-icon {
+         position: absolute;
+         display: flex;
+         top: 3.5em;
+         left: 45%;
+         margin-top: 5.3em;
+         width: 4em;
+         height: 4em;
+         justify-content: center;
+         align-items: center;
+         z-index: 1;
      }
 
 
@@ -838,8 +864,7 @@ p{
 
 
 
-
-     /*           ligne           */
+     /*           ligne  HR         */
      .bigHR {
          display:none;
      }
