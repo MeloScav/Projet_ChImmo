@@ -838,31 +838,9 @@ p{
         margin-right: 20%;
      }
 
-     .icon {
-         display: block;
-         width: 2em;
-         height: 2em;
-     }
-
      .box-icon {
-         position: absolute;
-         display: flex;
-         top: 3.5em;
          left: 45%;
-         margin-top: 5.3em;
-         width: 4em;
-         height: 4em;
-         justify-content: center;
-         align-items: center;
-         z-index: 1;
      }
-
-
-
-
-
-
-
 
      /*           ligne  HR         */
      .bigHR {
@@ -870,5 +848,11 @@ p{
      }
 
 
-
-}
+     /*        Contact Footer        */
+     .contactFooter{
+        display: flex;
+        flex-direction: column;
+     }
+     .ulFooter{
+        display: none;
+     }
