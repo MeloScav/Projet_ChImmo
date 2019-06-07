@@ -135,6 +135,11 @@ header {
 .blocMenu{
     display: none;
 }
+
+.BlocChimmo{
+    display: none;
+}
+
 /*         Fin Menu 2        */
 
 
@@ -662,10 +667,12 @@ p{
     	font-weight: bold;
     }
 
+    /*  Image menu  */
     .imgMenu{
         width: 25px;
         padding-top: 10px;
     }
+    /*  Bloc + image tel   */
     .tel{
         width: 40px;
         height: 40px;
@@ -680,10 +687,45 @@ p{
 
     /* Logo CHIMMO  */
     .BlocChimmo{
-        padding-top: 10px;
+        display: block;   /* Pour le faire réapparaître */
+        padding-top: 15px;
         padding-left: 30px;
     }
 
+
+
+
+    /*        Immo  + btn appartements      */
+    .boxTxtImmo {
+        margin-top: -6%;
+        margin-left: 5%;;
+        line-height: 1em;
+    }
+
+    .txtImmo h1{
+        margin-bottom: 0px;
+        padding-bottom: 15px;
+    }
+
+
+    .btnApt {
+        display: block;
+        margin-top: 0;
+        background-color: rgba(19, 50, 75, 1);
+        border: none;
+        width: 20em;
+        height: 4em;
+        color: white;
+        border-radius: 45px;
+        z-index: 0;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 13px;
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: right;
+        padding: 0;
+    }
 
 
     #section1{
