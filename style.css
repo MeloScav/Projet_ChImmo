@@ -856,3 +856,10 @@ p{
      .ulFooter{
         display: none;
      }
+     .menuFooter{
+        display: flex;
+        flex-direction: column;
+     }
+     .iconChene{
+      
+     }
