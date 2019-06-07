@@ -195,9 +195,12 @@ header {
     height: 4em;
     background-color: #74AAD5;
     border-radius: 100%;
+    border: 10px solid rgba(255, 255, 255, 0.3);   /* Bordure transparante  */
     justify-content: center;
     align-items: center;
     z-index: 2;
+    -webkit-background-clip: padding-box; /* Bordure transparente  */
+    background-clip: padding-box;   /* Bordure transparente  */
     -webkit-filter: drop-shadow(0, 0, 0, 1em, rgba(255, 255, 255, 0.842));
 }
 
@@ -599,6 +602,11 @@ p{
 
 /*              Adaptation GSM                   */
 @media screen and (max-width: 720px){
+  header {
+      height: 23em;
+  }
+
+
     .navContainer{
         display: none;    /* On fait disparaître le premier menu */
     }
@@ -692,12 +700,16 @@ p{
         padding-left: 30px;
     }
 
+/* Flèche vers le bas du header  */
+    .box-icon-header {
+        display: none;
+    }
 
 
 
     /*        Immo  + btn appartements      */
     .boxTxtImmo {
-        margin-top: -6%;
+        margin-top: 19%;
         margin-left: 5%;;
         line-height: 1em;
     }
@@ -712,26 +724,21 @@ p{
         display: block;
         margin-top: 0;
         background-color: rgba(19, 50, 75, 1);
-        border: none;
-        width: 20em;
-        height: 4em;
-        color: white;
-        border-radius: 45px;
         z-index: 0;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: bold;
-        font-size: 13px;
-        text-transform: uppercase;
-        text-decoration: none;
         text-align: right;
-        padding: 0;
+        padding-right: 10px;
+    }
+
+
+    /*       Round blanc bleu         */
+    .boxRound{
+        display: none;
     }
 
 
     #section1{
       display: flex;
       align-items:center;
-
       width: 100%;
     }
 
